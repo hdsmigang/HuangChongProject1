@@ -1,0 +1,530 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><html xmlns:wb="http://open.weibo.com/wb">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content=""/>
+<meta name="description" content="" />     
+<link rel="stylesheet" type="text/css" href="//staticnew.mayi.com/resourcesWeb/companyInfo/mayiClause/clause_files/css.css">
+<link href="//staticnew.mayi.com/resourcesWeb/css/global.css" rel="stylesheet" type="text/css" /> 
+<!-- new header -->
+  <link href="//staticnew.mayi.com/resourcesWeb/v201510/css/public_element.css" rel="stylesheet"  type="text/css"> 
+<title>房间审核规范</title>
+<script type="text/javascript" src="//staticnew.mayi.com/resourcesWeb/js/jquery-1.9.1.min.js"></script>
+
+</head>
+<body>
+    <!-- Header -->
+<!-- 拉新入口 -->
+<link href="//staticnew.mayi.com/resourcesWeb/v201612/headpub/css/laxin.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="//staticnew.mayi.com/resourcesWeb/js/searchlist/index_searchlist_public.js?V=20180704"></script>
+<script type="text/javascript" src="//staticnew.mayi.com/resourcesWeb/js/pub/list_header.js"></script>
+<!-- 房东权限相关 -->
+<script type="text/javascript" src="//staticnew.mayi.com/resourcesWeb/v201612/headpub/js/landlordConfig.js"></script>
+<style>	
+.logo58{background:url(//staticnew.mayi.com/resourcesWeb/images/index/58logo.png) no-repeat;left:14px !important;top:16px !important;}
+.logomayi{left:200px !important;}
+.alert-box1{width:100%;height: 100%;z-index: 300000;position: absolute;display:none;line-height:40px;}
+.surveYY1{background: #000;width:100%;height:100%;opacity: 0.7;position: fixed;top: 0px;left: 0px;}
+.offmax_no{width:400px;height:186px;position:fixed;top:50%;margin-top:-93px;left:50%;margin-left:-200px;background-color:#fff;z-index:999;text-align:center;box-shadow:0px 0px 4px #ccc;border-radius:2px;} 
+.offmax_no p{padding:0 20px;line-height:25px;}
+.alert_tit1{border-bottom:1px solid #e0e0e0;font-size:18px;margin-bottom:20px;}
+.close-alert1{cursor:pointer;width:50%;margin:20px auto;background-color:#22bb62;text-align:center;color:#fff;border-radius:2px;}
+
+.alert-box2{width:100%;height: 100%;z-index: 300000;position: absolute;display:none;line-height:40px;}
+.surveYY2{background: #000;width:100%;height:100%;opacity: 0.7;position: fixed;top: 0px;left: 0px;}
+.offmax_no2{width:400px;height:186px;position:fixed;top:50%;margin-top:-93px;left:50%;margin-left:-200px;background-color:#fff;z-index:999;text-align:center;box-shadow:0px 0px 4px #ccc;border-radius:2px;} 
+.offmax_no2 p{padding:0 20px;line-height:25px;}
+.alert_tit2{border-bottom:1px solid #e0e0e0;font-size:18px;margin-bottom:20px;}
+.close-alert2{cursor:pointer;width:50%;margin:20px auto;background-color:#22bb62;text-align:center;color:#fff;border-radius:2px;}
+
+</style>
+<input  type="hidden" name="ctx" id="ctx" value="" />
+<div class='header relave'>
+		    <a href="/" rel='nofollow'><div class='asote head_left'></div></a>
+		<div class='head_cnt relave'> 
+			<span class='search'></span>		
+			<ul class="nav_R asote nav_right">
+				 <li style="margin-left:-211px;">
+				 	<b class="mayi_tel_top"><img src="//staticnew.mayi.com/resourcesWeb/v201510/images/commom/tel_green_icon.png"><span style="font-family: &quot;Hiragino Sans GB&quot;, Arial, Verdana, Tahoma, &quot;微软雅黑&quot; !important;font-size: 14px;" hiragino="" sans="" gb",="" arial,="" verdana,="" tahoma,="" "微软雅黑"="" !important;font-size:="" 14px;"="">客服电话：</span>400-028-6868</b>
+				 </li>
+		            <li><a href="javascript:void(0)" id="loginshow" rel="nofollow" target="_self">登录/注册</a></li>             
+            	<li>
+            	 <!-- 四元组控制下载元素显示情况 -->
+	            	<div class="showinfo">
+	                	<a href="/activity/app50" rel="nofollow"  target="_blank" _mayi_rp="webaround|activity|firstorder">下载APP送500元大礼包</a>
+	                	<div class="b-app-img head_pop "><img src="https://i1.mayi.com/mayi55/M47/EO/SY/ZYJAYNQPDK7CE5R5Y3UZJFX4DQPM2R.jpg_110x110c.jpg" class='app_download_qr' style="width:110px;"></div>
+	                </div>
+            </li>
+            	<li>
+                <a class="recruit" rel="nofollow" href="/company/index" target="_blank" _mayi_rp="webaround|activity|company">商旅合作</a>
+            </li>
+             <li>
+             <a rel="nofollow" href="javascript:publish(0)" class="room-btn f16 t-center" _mayi_rp="webaround|activity|freepublish">免费发布房源</a> 
+             <!--   
+               <a href="javascript:void(0)"rel="nofollow" nexturl="/room/publish/basicinfo" class="loginatother room-btn f16 t-center"  target="_self" _mayi_rp="webaround|activity|freepublish">免费发布房源</a>
+             -->
+             </li>
+            </ul>
+            
+		</div>
+		
+	</div>
+	<!--公共头部结束-->
+	<div class="alert-box1">
+	    <div class="surveYY1"></div> 	
+	    <div class="offmax_no">
+	        <div class="alert_tit1">温馨提示</div>
+	        <p class="frozeninfo">对不起，房东账号被封禁</p>
+	        <p>如有疑问，请联系蚂蚁短租客服400-028-6868</p>
+	        <div class="close-alert1">我知道了</div>
+	    </div>
+	</div>
+	<!-- 免费发布房源提示 -->
+	<div class="alert-box2">
+	    <div class="surveYY2"></div> 	
+	    <div class="offmax_no2">
+	        <div class="alert_tit2">温馨提示</div>
+	        <p class="frozeninfo2"></p>
+	        <p>非常抱歉，发布房源功能已关闭，请前往途家房东端发布新房源！</p>
+	        <div class="close-alert2">我知道了</div>
+	    </div>
+	</div>
+<!-- 拉新弹层 -->
+<script type="text/javascript" src="//staticnew.mayi.com/resourcesWeb/js/util/jquery.qrcode.min.js"></script>
+    <script>
+    	$(function(){
+    		var userid = getCookie("MAYIUID");
+    		var ca_s = getCookie("_channel");
+    		var ca_n = getCookie("_caname");
+    		//生成专属二维码
+    		
+    		//邀请好友
+			var shareLink = "http://m.mayi.com/coupon/getInvitee?id="+userid+"&channel=w_qrcode&s=wap";
+    		//var shareLink = "https://previewwap.mayi.com/coupon/getInvitee?id="+userid+"&channel=w_qrcode&s=wap";
+			shareLink = shareLink.replace('','').replace('true','false');
+			var qingdaoWx="http://m.mayi.com/wxGuide?ca_s="+ca_s+"&ca_n="+ca_n;
+			//var qingdaoWx="http://prewap1.mayi.com/wxGuide?ca_s="+ca_s+"&ca_n="+ca_n;
+			
+			jQuery('#qrcode').qrcode({
+				width: 100,
+				height: 100,
+				text: shareLink
+			});	
+			//青岛啤酒节
+			jQuery('.qd_qrcode').qrcode({
+				width: 100,
+				height: 100,
+				text: qingdaoWx
+			});
+			jQuery('#qd_qrcode_theme').qrcode({
+				width: 85,
+				height: 85,
+				text: qingdaoWx
+			});
+
+    	})
+    </script>
+<div class="share_tan" style="display: none">
+	<div class="mask"></div>
+     <div class="hongbao_img">
+		 <img src="//staticnew.mayi.com/resourcesWeb/v201612/headpub/images/close.png" alt="" class="hong_close"/>
+		 <img src="//staticnew.mayi.com/resourcesWeb/v201612/headpub/images/hongbao1.png" alt=""  class="hongbao"/>
+		 <div id="qrcode" class="ewm_img"></div>
+		 <!-- <img src="//staticnew.mayi.com/resourcesWeb/v201612/headpub/images/ewm.jpg" alt="" class="ewm_img"/> -->
+		 <p class="text_para">扫码后，通过分享活动邀请好友注册蚂蚁短租，双方均可获得100元住宿基金！</p>
+		 
+	 </div>
+</div>
+<input  type="hidden" name="subdomain" id="subdomain" value="" />
+<input  type="hidden" name="mainsite" id="mainsite" value="" />
+<input  type="hidden" name="ctx" id="ctx" value="" />
+<input  type="hidden" name="ctx1" id="ctx1" value="//staticnew.mayi.com" />
+<input  type="hidden" name="uid" id="uid" value="0" />
+<input  type="hidden" name="loginurl" id="loginurl" value="none" />
+<input type="hidden" name="head_userName" id="head_userName" value="">
+<script type='text/javascript' src='//webchat.7moor.com/javascripts/7moorInit.js?accessId=73859f20-f357-11e6-b43e-3b18b16942dc&autoShow=false' async='async'></script>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><html xmlns:wb="http://open.weibo.com/wb">
+<head> 
+<link rel="stylesheet" href="//staticnew.mayi.com/resourcesWeb/im/css/IM.css?v=1" />    
+</head> 
+<body>   
+</body>	 
+
+</html>	<div style="" class="Online_btn Only_Online">
+    	<span class="border-left"></span>
+        <a href="javascript:void(0)" id="live800iconlink" _mayi_rp="room|sem_contact|message"><img border="0" onclick="qimoChatClick()" src="http://i1.mayi.com/mayi98/M99/OK/GL/5635PVPKQGH6CND3UTE6WAYHLUXAXB.jpg" id="live800icon" name="live800icon"></a>
+    </div>
+<!-- Header END -->
+<!--Main-->
+    <ul class="nav-box">
+        <li><a href="/landlordrule">房东规则</a></li>
+        <li><a href="/tenantrule">房客规则</a></li>
+        <li><a class="current" href="/roomauditrule">房间审核规范</a></li>
+        <li><a href="/agreement">服务协议</a></li>
+        <li><a href="/privacypolicy">隐私政策</a></li>
+        <li><a href="/webdisclaimer">免责声明</a></li>
+    </ul>
+    <div class="main">
+         <img src="//staticnew.mayi.com/resourcesWeb/companyInfo/mayiClause/clause_files/house_check_rule.jpg">
+    </div>
+<!-- Footer -->
+<script type="text/javascript" src="//staticnew.mayi.com/resourcesWeb/js/layer/layer.min.js"></script>
+<script type="text/javascript" src="//staticnew.mayi.com/resourcesWeb/js/jQuery.md5.js"></script>
+<script type="text/javascript" src="//staticnew.mayi.com/resourcesWeb/js/login.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function(){
+    function getCookie(objName) {
+        var arrStr = document.cookie.split("; ");
+        for(var i = 0;i < arrStr.length;i ++){
+            var temp = arrStr[i].split("=");
+            if(temp[0] == objName) return unescape(temp[1]);
+        }
+    }
+    
+    function deleteCookie(name, path) {
+        var name = escape(name);
+        var expires = new Date(0);
+        path = path == "" ? "" : ";path=" + path;
+        document.cookie = name + "=" + ";expires=" + expires.toUTCString() + path;
+    }
+
+    //修正cookie中的MayiUserInfo
+    var user = getCookie('MayiUserInfo');
+    if (user != null) {
+        var pattern = new RegExp(/^\".+\"$/);
+        if (pattern.exec(user)) {
+            user = user.substring(1,user.length-1);
+            deleteCookie('MayiUserInfo', '/');
+            document.cookie = "MayiUserInfo=" + escape(user) + ";path=/;domain=.mayi.com";
+        }
+    }
+    //未登录的登录后才能显示站内信
+    	$(".email").show();
+});
+
+function sinaWeibo(){
+	window.open("http://widget.weibo.com/dialog/follow.php?fuid=2357071361");
+}
+</script>
+<div class="foot index-foot clearfloat">
+	<div class="w1190 pb20 clearfloat">
+        	<div class="link_end">
+    <p class="t-center f12 c777776">客户服务：400-028-6868 |<a href="http://www.mayi.com/tenantlogin/" target="_blank" class="c777776">&nbsp;帮助中心&nbsp;|</a><a href="http://www.mayi.com/aboutcompany/" target="_blank" class="c777776">&nbsp;公司信息&nbsp;|</a><a href="/sitemap" target="_blank" class="c777776">&nbsp;网站地图&nbsp;|</a><a href="http://www.mayi.com/activity/app50" target="_blank" class="c777776">&nbsp;app下载&nbsp;|</a>关注我们
+        <span class="mr10 cursorpt showinfo relave" style="display:inline-block;vertical-align:middle;">
+            <img src="//staticnew.mayi.com/resourcesWeb/images/weixin_logo_s.png">
+            <img src="http://staticnew.mayi.com/resourcesWeb/v201510/images/index_own/weixin.jpg" class="head_pop absot" style="bottom:24px;left:-32px;">
+        </span>
+        <span class="cursorpt" style="display:inline-block;vertical-align:middle;">
+            <img src="//staticnew.mayi.com/resourcesWeb/images/xinlang_logo_s.png" onclick="sinaWeibo();">
+        </span>
+    </p>
+    <!--公司切换-->
+    <p class="t-center f12 c777776">网站备案/许可证号：京ICP证130021号 <a class="c777776" href="https://i1.mayi.com/mayi41/M99/YJ/EZ/UFM6JS6W3CJCKVTKB7XZBH7QEPN4ZY.jpg" target="_blank">营业执照编号：102585576</a> 易云游网络技术（北京）有限公司</p>
+    <!--<p class="t-center f12 c777776">网站备案/许可证号：京ICP证130021号 北京裕山阳科技发展有限公司</p>-->
+    <!--<p class="t-center f12 c777776">网站备案/许可证号：京ICP证130021号  北京裕山阳科技发展有限公司  公司地址：北京市海淀区上地三街金隅嘉华大厦D座</p>-->
+    <!--<p class="t-center f12 c777776">京公网安备11010802018218号</p>-->
+</div>
+     </div>
+</div>
+<!--[statistics start]-->
+<!-- Footer END -->
+<!-- 登录弹窗 -->
+<div class="loginbox" id="loginboxdiv" nexturl="none" name="loginboxdiv" style="display:none;">
+	<a class="login-colse"  id="loginclose" name="loginclose" onClick="" href="javascript:void(0)"></a>
+    <div class="login-ways clearfloat">
+    	<div class="fl phone-account">
+            <ul class="c322c27 clearfloat f18">
+                <li class="phoneway_current" id="changeloginbyma">手机验证码登录</li>
+                <li class="mayiway" id="changeloginbyup">帐号密码登录</li>
+            </ul>
+            <div class="login-phone-account">
+            	<!-- 手机登陆 -->		
+                <div class="login-input" id="loginbymadiv" name="loginbymadiv" >
+	            	<input type="hidden" id="li_num" value="0">
+	            	<input type="hidden" id="code_num" value="86">
+	                <div class="input">
+	                    <span class="phone-icon"></span>
+	                    <input class="dlargeinput" type="text" id="loginmobile" name="loginmobile" placeholder="手机号" value="" id="introduce"
+	                    	onafterpaste="mobileRepAndSetPos(this,/[^\d.]/g,'')" onkeyup="mobileRepAndSetPos(this,/[^\d.]/g,'')" maxlength="11"/>
+	                    <div class="choice_phone_type">
+							<i code="86">+86</i>
+							<span class="UP_down choice_nation_open"></span>
+						</div>
+	                </div>
+	                <div class="nation_list">
+						<ul class="continent_list">
+							<li class="">亚洲</li>
+							<li class="">欧洲</li>
+							<li class="">美洲</li>
+							<li class="">大洋洲</li>
+						</ul>
+						<ul class="nation_tel_list">
+							<!-- countrycode window-->
+							<li style="display: block;">
+	<a href="javascript:void(0);" value="86">中国大陆&nbsp;&nbsp;+86</a>
+	<a href="javascript:void(0);" value="82">韩国&nbsp;&nbsp;+82</a>
+	<a href="javascript:void(0);" value="60">马来西亚&nbsp;&nbsp;+60</a>
+	<a href="javascript:void(0);" value="81">日本&nbsp;&nbsp;+81</a>
+	<a href="javascript:void(0);" value="66">泰国&nbsp;&nbsp;+66</a>
+	<a href="javascript:void(0);" value="65">新加坡&nbsp;&nbsp;+65</a>
+	<a href="javascript:void(0);" value="91">印度&nbsp;&nbsp;+91</a>
+	<a href="javascript:void(0);" value="62">印度尼西亚&nbsp;&nbsp;+62</a>
+	<a href="javascript:void(0);" value="84">越南&nbsp;&nbsp;+84</a>
+	<a href="javascript:void(0);" value="853">中国澳门&nbsp;&nbsp;+853</a>
+	<a href="javascript:void(0);" value="852">中国香港&nbsp;&nbsp;+852</a>
+	<a href="javascript:void(0);" value="886">中国台湾&nbsp;&nbsp;+886</a>
+</li>
+<li style="display: none;">
+	<a href="javascript:void(0);" value="49">德国&nbsp;&nbsp;+49</a>
+	<a href="javascript:void(0);" value="7">俄罗斯&nbsp;&nbsp;+7</a>
+	<a href="javascript:void(0);" value="33">法国&nbsp;&nbsp;+33</a>
+	<a href="javascript:void(0);" value="380">乌克兰&nbsp;&nbsp;+380</a>
+	<a href="javascript:void(0);" value="34">西班牙&nbsp;&nbsp;+34</a>
+	<a href="javascript:void(0);" value="39">意大利&nbsp;&nbsp;+39</a>
+	<a href="javascript:void(0);" value="44">英国&nbsp;&nbsp;+44</a>
+</li>
+<li style="display: none;">
+	<a href="javascript:void(0);" value="55">巴西&nbsp;&nbsp;+55</a>
+	<a href="javascript:void(0);" value="1">加拿大&nbsp;&nbsp;+1</a>
+	<a href="javascript:void(0);" value="1">美国&nbsp;&nbsp;+1</a>
+</li>
+<li style="display: none;">
+	<a href="javascript:void(0);" value="61">澳大利亚&nbsp;&nbsp;+61</a>
+	<a href="javascript:void(0);" value="64">新西兰&nbsp;&nbsp;+64</a>
+</li>						</ul>
+					</div>
+	                <div class="largeinputbox small-top clearfix">
+	                    <div class="dinput fl" >
+	                        <span class="verification-icon"></span>
+	                        <input class="dsmallinput" type="text" id="imagecode" placeholder="图形验证码" value=""/>
+	                    </div>
+	                    <div class="yz-code fr">
+	                          <img src=""  id="loginauthimage" title="点击刷新" />
+	                    </div>
+	                </div>
+	                <div class="largeinputbox small-top clearfix" id="maerrordiv">
+	                    <div class="dinput fl" id="maerrordiv">
+	                        <span class="password-icon"></span>
+	                        <input class="dsmallinput" type="text" id="loginphonecode" name="loginphonecode" placeholder="短信验证码" value=""/>
+	                    </div>
+	                    <div class="yz-code fr">
+	                        <input class="sendnumber defaultsend" type="button" id="getloginphonecode" name="getloginphonecode" value="获取验证码"/>
+	                    </div>
+	                </div>
+	                <div class="logincheckbox large-top clearfix">
+	                    <label class="fl">
+	                        <input class="selectcheckbox" type="checkbox" name="rememberloginstate" checked="checked" value=""/>自动登录
+	                    </label>				
+	                </div>	
+	                <div class="logincheckbox large-top clearfix"><font>未注册的手机号将自动创建为蚂蚁短租帐户</font></div>
+	                <div class="btn-wrap btnpdt20">
+	                    <a href="javascript:void(0)" id="loginbymado">登录</a>
+	                </div>
+            	</div>
+            	<!-- 手机登陆 end  -->	
+            	<!-- 密码登陆 start -->
+	            <div class="login-input" id="loginbyupdiv" name="loginbyupdiv" style="display:none;">
+	            	<input type="hidden" id="li_num_1" value="0">
+	            	<input type="hidden" id="code_num_1" value="86">
+	                <div class="input">
+	                    <span class="user-icon"></span>
+	                    <input class="dlargeinput" type="text" id="loginnamein" name="loginnamein"  placeholder="手机号/邮箱/账号" value="" autocomplete="off"/>
+	                	<div class="choice_phone_type_1">
+							<i tag="CN" code="86">+86</i>
+							<span class="UP_down choice_nation_open"></span>
+						</div>
+	                </div>
+	                <div class="nation_list_1">
+						<ul class="continent_list_1">
+							<li class="">亚洲</li>
+							<li class="">欧洲</li>
+							<li class="">美洲</li>
+							<li class="">大洋洲</li>
+						</ul>
+						<ul class="nation_tel_list_1">
+							<!-- countrycode window-->
+<li style="display: block;">
+	<a href="javascript:void(0);" value="86">中国大陆&nbsp;&nbsp;+86</a>
+	<a href="javascript:void(0);" value="82">韩国&nbsp;&nbsp;+82</a>
+	<a href="javascript:void(0);" value="60">马来西亚&nbsp;&nbsp;+60</a>
+	<a href="javascript:void(0);" value="81">日本&nbsp;&nbsp;+81</a>
+	<a href="javascript:void(0);" value="66">泰国&nbsp;&nbsp;+66</a>
+	<a href="javascript:void(0);" value="65">新加坡&nbsp;&nbsp;+65</a>
+	<a href="javascript:void(0);" value="91">印度&nbsp;&nbsp;+91</a>
+	<a href="javascript:void(0);" value="62">印度尼西亚&nbsp;&nbsp;+62</a>
+	<a href="javascript:void(0);" value="84">越南&nbsp;&nbsp;+84</a>
+	<a href="javascript:void(0);" value="853">中国澳门&nbsp;&nbsp;+853</a>
+	<a href="javascript:void(0);" value="852">中国香港&nbsp;&nbsp;+852</a>
+	<a href="javascript:void(0);" value="886">中国台湾&nbsp;&nbsp;+886</a>
+</li>
+<li style="display: none;">
+	<a href="javascript:void(0);" value="49">德国&nbsp;&nbsp;+49</a>
+	<a href="javascript:void(0);" value="7">俄罗斯&nbsp;&nbsp;+7</a>
+	<a href="javascript:void(0);" value="33">法国&nbsp;&nbsp;+33</a>
+	<a href="javascript:void(0);" value="380">乌克兰&nbsp;&nbsp;+380</a>
+	<a href="javascript:void(0);" value="34">西班牙&nbsp;&nbsp;+34</a>
+	<a href="javascript:void(0);" value="39">意大利&nbsp;&nbsp;+39</a>
+	<a href="javascript:void(0);" value="44">英国&nbsp;&nbsp;+44</a>
+</li>
+<li style="display: none;">
+	<a href="javascript:void(0);" value="55">巴西&nbsp;&nbsp;+55</a>
+	<a href="javascript:void(0);" value="1">加拿大&nbsp;&nbsp;+1</a>
+	<a href="javascript:void(0);" value="1">美国&nbsp;&nbsp;+1</a>
+</li>
+<li style="display: none;">
+	<a href="javascript:void(0);" value="61">澳大利亚&nbsp;&nbsp;+61</a>
+	<a href="javascript:void(0);" value="64">新西兰&nbsp;&nbsp;+64</a>
+</li>						</ul>
+					</div>
+	                <div class="input small-top" >
+	                    <span class="password-icon"></span>
+	                    <input class="dlargeinput" type="password" id="loginpassin" name="loginpassin" placeholder="密码" value=""/>
+	                </div>
+	                <div class="largeinputbox small-top clearfix" id="uperrordiv">
+	                    <div class="dinput fl" id="yui_3_5_1_1_1434542056373_108">
+	                        <span class="verification-icon"></span>
+	                        <input type="text" class="dsmallinput" id="imagecode1" placeholder="图形验证码" value="">
+	                    </div>
+	                    <div class="yz-code fr">
+	                          <img src="" id="loginauthimage1" title="点击刷新">
+	                    </div>
+	                </div>
+	                <div class="logincheckbox large-top clearfix">
+	                    <label class="fl">
+	                        <input class="selectcheckbox" type="checkbox" name="rememberpass" checked="checked" value=""/>自动登录
+	                    </label>				
+	                </div>	
+	                <div class="btn-wrap btnpdt20">
+	                    <a href="javascript:void(0)" id="loginbyupdo" _mayi_rp="web|condition|loginc">登录</a>
+	                </div>
+	                <p class="otherwaytitle mt20">没有账号密码请 <a href="javascript:void(0)" id="changeloginbymwa">使用手机验证码登录</a></p>
+	            </div>
+	            <!-- 密码登陆 end -->
+            </div>
+        </div>
+        <div class="fl t-center third-party">
+        	<p class="f18 c322c27 mb20">其他登录方式</p>
+            <ul class="otherway c322c27">
+                <li class="wxway" id="loginbywx" _mayi_rp="web|condition|loginc">微信登录</li>
+                <li class="sinaway" id="loginbysina" _mayi_rp="web|condition|loginc">微博登录</li>
+                <li class="qqway" id="loginbyqq" _mayi_rp="web|condition|loginc">QQ登录</li>
+            </ul>
+        </div>
+    </div>
+</div>	
+<!-- 登录弹窗 END --> 
+<!--公共尾部结束-->
+<script type="text/javascript" src="//staticnew.mayi.com/resourcesWeb/js/layer/layer.min.js"></script>
+<script type="text/javascript" src="//staticnew.mayi.com/resourcesWeb/js/jQuery.md5.js"></script>
+<script type="text/javascript" src="//staticnew.mayi.com/resourcesWeb/js/loginpc.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function(){
+    function getCookie(objName) {
+        var arrStr = document.cookie.split("; ");
+        for(var i = 0;i < arrStr.length;i ++){
+            var temp = arrStr[i].split("=");
+            if(temp[0] == objName) return unescape(temp[1]);
+        }
+    }
+    
+    function deleteCookie(name, path) {
+        var name = escape(name);
+        var expires = new Date(0);
+        path = path == "" ? "" : ";path=" + path;
+        document.cookie = name + "=" + ";expires=" + expires.toUTCString() + path;
+    }
+
+    //修正cookie中的MayiUserInfo
+    var user = getCookie('MayiUserInfo');
+    if (user != null) {
+        var pattern = new RegExp(/^\".+\"$/);
+        if (pattern.exec(user)) {
+            user = user.substring(1,user.length-1);
+            deleteCookie('MayiUserInfo', '/');
+            document.cookie = "MayiUserInfo=" + escape(user) + ";path=/;domain=.mayi.com";
+        }
+    }
+    //未登录的登录后才能显示站内信
+    	$(".email").show();
+});
+
+function sinaWeibo(){
+	window.open("http://widget.weibo.com/dialog/follow.php?fuid=2357071361");
+}
+</script>
+<style type="text/css">
+.email{ position:fixed; bottom:0px; right:0px; width:190px; height:35px; line-height:35px; background:#e8e8e8; border:1px #CCCCCC solid; border-right:none; z-index:400000000;}
+.email a{ padding-left:10px; float:left; font-weight:normal; font-family:"宋体"; font-size:12px; width:120px; box-shadow:1px 0px 0px 0px #ccc; border-right:1px #fff solid;}
+.email a img{ margin:12px 3px 0px 0px; float:left; width:16px; height:12px;}
+.imjs-status{color:#55aa39 !important}
+#webIM ul.tab-im .offline-icon,#webIM ul.tab-im .online-icon{background-position:0 !important}
+#webIM .all-list a.on, #webIM .all-list a.off{background-position:-239px -297px !important;color:#2883C3 !important}
+#webIM ul.tab-im a{color:#2883C3 !important}
+</style> 
+<script src="//tjs.sjs.sinajs.cn/open/api/js/wb.js" type="text/javascript" charset="utf-8"></script>
+<!-- load statistics js -->
+<!--[statistics start]-->
+<!-- load End--><!-- 蚂蚁点击 -->
+<script src="//staticnew.mayi.com/duanzu/resources/common/js/mayi.js"></script>
+<!-- 蚂蚁分析 -->
+<script src="//staticnew.mayi.com/resources/js/mayi/mayi_rp.js"></script>
+
+<!-- 百度统计 -->
+<script type="text/javascript">
+    var _hmt = _hmt || [];
+    (function() {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?0294bbb72b1c6a6b342da076397c9af2";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+    })();
+</script>
+
+<!--百度推送代码  -->
+<script>
+    var bd_push = document.getElementById("baidu_push");
+    if (bd_push != null) {
+        (function () {
+            var bp = document.createElement('script');
+            var curProtocol = window.location.protocol.split(':')[0];
+            if (curProtocol === 'https') {
+                bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+            }
+            else {
+                bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+            }
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(bp, s);
+        })();
+    }
+</script>
+
+<!--GA 统计所需js 新  2018-01-25-->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-63543541-1"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-63543541-1');
+</script>
+
+
+
+
+<!--ganji start-->
+<script type="text/javascript">
+var bsource = document.getElementById("channel_ganji");
+if (bsource != null){
+}
+</script>
+<!--ganji end-->
+
+
+
+<!--360聚效推广的访客找回 -->
+</body></html>

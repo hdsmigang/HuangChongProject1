@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link href="//staticnew.mayi.com/resourcesWeb/css/global.css?V=201508071525" rel="stylesheet" type="text/css" />
+		<link href="//staticnew.mayi.com/resourcesWeb/css/PCenter.css?V=20160715" rel="stylesheet" type="text/css" />
+		<link href="//staticnew.mayi.com/resourcesWeb/css/collection.css" rel="stylesheet" type="text/css">
+		<link href="//staticnew.mayi.com/resourcesWeb/css/account.css?v=20160616" rel="stylesheet" type="text/css" />
+		<link href="//staticnew.mayi.com/resourcesWeb/css/landlord/manage_pub.css" rel="stylesheet" type="text/css" />
+		<link href="//staticnew.mayi.com/resourcesWeb/v201510/css/public_element.css" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" href="layui/css/layui.css" media="all">
+		<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<link href="//staticnew.mayi.com/resourcesWeb/css/cropper.css" rel="stylesheet" type="text/css">
+		<script type="text/javascript" src="//staticnew.mayi.com/resourcesWeb/js/layer/layer.min.js"></script>
+		<script type="text/javascript" src="//staticnew.mayi.com/resourcesWeb/js/account/ajaxfileupload.js"></script>
+		<script type="text/javascript" src="//staticnew.mayi.com/resourcesWeb/js/account/account.js"></script>
+		<script type="text/javascript" src="//staticnew.mayi.com/resourcesWeb/js/regx/idcard.js"></script>
+		<script type="text/javascript" src="//staticnew.mayi.com/resourcesWeb/js/account/cropper.js"></script>
+		<script type="text/javascript" src="//staticnew.mayi.com/resourcesWeb/js/account/ui/jquery-ui-1.9.2.custom.min.js"></script>
+
+	</head>
+
+	<body>
+		<div class="header relave">
+			<a href="/" rel="nofollow">
+				<div class="asote head_left"></div>
+			</a>
+			<div class="head_cnt relave">
+				<span class="search"></span>
+				<ul class="nav_R asote nav_right">
+					<li style="margin-left:-211px;">
+						<b class="mayi_tel_top"><img src="//staticnew.mayi.com/resourcesWeb/v201510/images/commom/tel_green_icon.png"><span style="font-family: &quot;Hiragino Sans GB&quot;, Arial, Verdana, Tahoma, &quot;微软雅黑&quot; !important;font-size: 14px;" hiragino="" sans="" gb",="" arial,="" verdana,="" tahoma,="" "微软雅黑"="" !important;font-size:="" 14px;"="">客服电话：</span>400-000-0000</b>
+					</li>
+					<li>
+						<div class="showinfo">
+							<a href="javascript:menufrozen(870177979,'/tenant/870177979/orders','user')" target="_self"><img src="https://i1.mayi.com//mayi21/M13/PI/QW/9Q9J28QBYT9ZESFQG4VWMY3KWVXAQW.jpg_35x35c.jpg" id="aaa" class="user_img">
+								<span class="name" id="head_nickname">咸鱼</span></a>
+							<div class="head_pop" style="display: none;">
+								<div class="pop_column">
+									<p>
+										<a href="javascript:menufrozen(870177979,'/tenant/870177979/orders','user')" target="_self" id="myorder" rel="nofollow" _mayi_rp="webaround|userinfo|order">我的订单</a>
+									</p>
+									<p>
+										<a href="javascript:menufrozen(870177979,'/user/tenant/accountmanager','user')" target="_self" id="myorder" rel="nofollow" class="slideactive" _mayi_rp="webaround|userinfo|account">我的账户</a>
+									</p>
+									<p>
+										<a href="javascript:menufrozen(870177979,'/user/tenant/mycollection','user')" target="_self" id="mycollect" rel="nofollow" _mayi_rp="webaround|userinfo|collection">我的收藏</a>
+									</p>
+									<p>
+										<a href="javascript:menufrozen(870177979,'/user/tenant/msgmanager','user')" target="_self" id="mymsg" rel="nofollow" _mayi_rp="webaround|userinfo|inform">消息通知</a>
+									</p>
+									<p class="Invite_friends" _mayi_rp="webaround|userinfo|invite">邀请好友</p>
+									<p class="textCt">
+										<a href="javascript:void(0)" id="loginoutbut" target="_self" class="stclick" clicktag="1_6">退出登录</a>
+									</p>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="showinfo" id="s_islandlord" hidden="" style="display: block;">
+							<a href="javascript:loginowner(870177979)" target="_self" class="stclick">我是房东</a>
+							<div class="head_pop" style="display: none;">
+								<div class="pop_column plr10">
+									<p>
+										<a href="javascript:menufrozen(870177979,'/landlord/870177979/orders','landlord')">订单管理</a>
+									</p>
+									<p>
+										<a href="javascript:menufrozen(870177979,'/user/landlord/roommanager','landlord')">房源管理</a>
+									</p>
+									<p>
+										<a href="javascript:menufrozen(870177979,'/user/landlord/msgmanager','landlord')">消息通知</a>
+									</p>
+									<p>
+										<a href="javascript:menufrozen(870177979,'/landlord/870177979/settlements','landlord')">结算管理</a>
+									</p>
+									<p>
+										<a href="javascript:menufrozen(870177979,'/user/landlord/landlordweixin','landlord')">关注房东微信</a>
+									</p>
+									<!-- 四元组控制下载元素显示情况 -->
+									<p>
+										<a href="/user/landlord/landlordhelper/">下载APP</a>
+									</p>
+									<p hidden="" id="s_micro" style="display: block;">
+										<a href="/user/landlord/microshopmanager/">房东微店</a>
+									</p>
+									<p>
+										<a href="javascript:menufrozen(870177979,'/user/landlord/accountmanager','landlord')">我的设置</a>
+									</p>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li>
+						<a rel="nofollow" href="javascript:publish(870177979)" class="room-btn f16 t-center" _mayi_rp="webaround|activity|freepublish">免费发布房源</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="main">
+			<div class="personalCenter clearfix">
+				<ul class="center-sidebar">
+					<li>
+						<a class="slideactive" href="/tenant/870177979/orders">订单管理<span class="ddgl_current"></span></a>
+					</li>
+					<li>
+						<a href="/user/tenant/msgmanager">消息通知<span class="xxtz"></span></a>
+					</li>
+					<li>
+						<a href="/user/tenant/accountmanager">账户管理<span class="zhgl"></span></a>
+					</li>
+					<li>
+						<a href="/user/tenant/mycollection">我的收藏<span class="save_Li"></span></a>
+					</li>
+
+				</ul>
+				
+
+				<div class="centerCon">
+					<div class="layui-tab">
+						<ul class="layui-tab-title">
+							<li class="layui-this">所有订单</li>
+							<li>未支付</li>
+							<li>已支付</li>
+							<li>待评价</li>
+						</ul>
+						<div class="layui-tab-content">
+							<div class="layui-tab-item layui-show">
+								这里是所有订单
+							</div>
+							<div class="layui-tab-item">这里是未支付订单</div>
+							<div class="layui-tab-item">这里是已支付订单</div>
+							<div class="layui-tab-item">这里的待评价订单</div>
+						</div>
+					</div>
+					<script src="layui/layui.js" charset="utf-8"></script>
+					<!-- 注意：如果你直接复制所有代码到本地，上述js路径需要改成你本地的 -->
+					<script>
+						layui.use('element', function() {
+							var $ = layui.jquery;
+							var	element = layui.element; //Tab的切换功能，切换事件监听等，需要依赖element模块
+
+						});
+					</script>
+
+				</div>
+			</div>
+		</div>
+		<div class="foot index-foot clearfloat">
+			<div class="w1190 pb20 clearfloat">
+				<div class="link_end">
+					<p class="t-center f12 c777776">客户服务：400-028-6868 |
+						<a href="http://www.mayi.com/tenantlogin/" target="_blank" class="c777776">&nbsp;帮助中心&nbsp;|</a>
+						<a href="http://www.mayi.com/aboutcompany/" target="_blank" class="c777776">&nbsp;公司信息&nbsp;|</a>
+						<a href="/sitemap" target="_blank" class="c777776">&nbsp;网站地图&nbsp;|</a>
+						<a href="http://www.mayi.com/activity/app50" target="_blank" class="c777776">&nbsp;app下载&nbsp;|</a>关注我们
+						<span class="mr10 cursorpt showinfo relave" style="display:inline-block;vertical-align:middle;">
+            <img src="//staticnew.mayi.com/resourcesWeb/images/weixin_logo_s.png">
+            <img src="http://staticnew.mayi.com/resourcesWeb/v201510/images/index_own/weixin.jpg" class="head_pop absot" style="bottom:24px;left:-32px;">
+        </span>
+						<span class="cursorpt" style="display:inline-block;vertical-align:middle;">
+            <img src="//staticnew.mayi.com/resourcesWeb/images/xinlang_logo_s.png" onclick="sinaWeibo();">
+        </span>
+					</p>
+					<!--公司切换-->
+					<p class="t-center f12 c777776">网站备案/许可证号：京ICP证130021号
+						<a class="c777776" href="https://i1.mayi.com/mayi41/M99/YJ/EZ/UFM6JS6W3CJCKVTKB7XZBH7QEPN4ZY.jpg" target="_blank">营业执照编号：102585576</a> 易云游网络技术（北京）有限公司</p>
+					<!--<p class="t-center f12 c777776">网站备案/许可证号：京ICP证130021号 北京裕山阳科技发展有限公司</p>-->
+					<!--<p class="t-center f12 c777776">网站备案/许可证号：京ICP证130021号  北京裕山阳科技发展有限公司  公司地址：北京市海淀区上地三街金隅嘉华大厦D座</p>-->
+					<!--<p class="t-center f12 c777776">京公网安备11010802018218号</p>-->
+				</div>
+			</div>
+		</div>
+	</body>
+
+</html>
